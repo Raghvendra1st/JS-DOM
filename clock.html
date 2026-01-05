@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Mastery Dash</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+
+    <div class="container">
+        <section class="clock-box">
+            <h2>Local Time</h2>
+            <div id="clock" class="display">00:00:00</div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="timer-box">
+            <h2>Countdown</h2>
+            <div class="controls">
+                <input type="datetime-local" id="dateInput">
+                <button id="startBtn">Set Target</button>
+            </div>
+            <div id="countdown" class="display">--:--:--</div>
+        </section>
+    </div>
+
+    <script src="clock.js"></script>
+</body>
+</html>
