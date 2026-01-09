@@ -1,0 +1,28 @@
+
+h1{
+    display:block;
+    margin:40px 0;
+    font-size:45px;
+    color:blueviolet;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottem:1px;
+
+
+}
+h2{
+    display:block;
+    margin:20px 0;
+    font-size:50px;
+    font: weight 400px;
+    color:chartreuse;
+    
+    margin:1px 0;
+
+}
+button{
+    background-color:rgb(235, 233, 233);
+    font-size:25px;
+    text-transform: capitalize;
+
+}
