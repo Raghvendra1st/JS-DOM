@@ -1,0 +1,89 @@
+
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.calculator {
+  background-color: #000;
+  border-radius: 20px;
+  padding: 20px;
+  width: 320px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+
+.display {
+  color: white;
+  font-size: 3rem;
+  text-align: right;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+  word-break: break-all;
+  min-height: 80px;
+}
+
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+button {
+  aspect-ratio: 1; /* Makes buttons square */
+  border: none;
+  border-radius: 50%; /* Circular buttons */
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: filter 0.2s, transform 0.1s;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+
+button {
+  background-color: #333;
+  color: white;
+}
+
+.operator {
+  background-color: #f39c12; /* Orange for operators */
+  color: white;
+}
+
+button[data-action="clear"], 
+button[data-action="delete"] {
+  background-color: #a5a5a5;
+  color: black;
+}
+
+
+.zero {
+  grid-column: span 2;
+  aspect-ratio: auto; /* Allow it to stretch horizontally */
+  border-radius: 40px;
+}
+
+.equal {
+  background-color: #f39c12;
+}
+
+button:hover {
+  filter: brightness(120%);
+}
